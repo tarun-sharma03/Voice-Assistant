@@ -1,6 +1,6 @@
 # This program upon execution will take your command to play music randomly.
 import pyttsx3 #pip install pyttsx3
-import speech_recognition as sr #pip install speech recognition
+import speech_recognition as sr #pip install SpeechRecognition
 import os
 import datetime
 import random
@@ -28,6 +28,7 @@ def takedata():
         return 'None'
     return query
 
+#function gives the greeting message to the user.
 def wishme():
     hours = datetime.datetime.now().hour
 
