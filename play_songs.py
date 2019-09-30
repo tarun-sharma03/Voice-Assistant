@@ -43,7 +43,7 @@ def wishme():
 wishme()
 query = takedata() 
 if 'play music' or 'play songs' in query:
-    music_dir = "F:\\Songs" #put the location of the folder where you store your songs
+    music_dir = "https://www.youtube.com/watch?v=cUak-vcQDRo" #put the location of the folder where you store your songs
     songs = os.listdir(music_dir)
     l = len(songs)
     num = random.randrange(0,l,1)
