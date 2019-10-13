@@ -7,7 +7,7 @@ import random
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
-engine.setProperty('voice',voices[0].id) #voices[1].id for female assistant
+engine.setProperty('voice',voices[1].id) #voices[0].id for male assistant
 
 #speak function to speak the string passed to it.
 def speak(audio):
@@ -24,7 +24,7 @@ def takedata():
         query = r.recognize_google(audio,language='en-in')  #language set is Indian English
         print("The user said ",query)
     except Exception :
-        print("Sorry i was unable to catch that. Please try speaking that again.")
+        print("Seems like i had some problem understanding that...could you please repeat it ?")
         return 'None'
     return query
 
